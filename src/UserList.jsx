@@ -1,6 +1,7 @@
 //import React, useState, useEffect and axios
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./App.css";
 
 //UserList function that houses the fetchData function
 const UserList = () => {
@@ -29,7 +30,7 @@ const UserList = () => {
           <li
             key={user.id}
             style={{
-              listStyleType: "disc",
+              listStyleType: "square",
               textAlign: "justify",
               fontSize: "120%",
             }}

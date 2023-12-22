@@ -11,13 +11,21 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+import Button from "react-bootstrap/Button";
+
+import Form from "react-bootstrap/Form";
+
 function App() {
   return (
     <>
       {/*Nav Bar*/}
-      <Container fluid>
-        <Row style={{ height: "75px" }}>
-          <Navbar bg="primary" data-bs-theme="dark">
+      <Container fluid style={{ borderRadius: "0px" }}>
+        <Row style={{ height: "75px", borderRadius: "0px" }}>
+          <Navbar
+            bg="primary"
+            data-bs-theme="dark"
+            style={{ borderRadius: "0px" }}
+          >
             <Container>
               <Navbar.Brand href="#home" style={{ fontWeight: "bold" }}>
                 API DEMO
@@ -37,24 +45,24 @@ function App() {
         <div
           className="app"
           style={{
-            width: "70%",
-            margin: "40px auto",
+            width: "100%",
+            margin: "30px auto",
             border: "1px solid grey",
             textAlign: "center",
             border: "1px solid rgb(176, 176, 176)",
             backgroundColor: "#fff",
-            borderRadius: "1px",
+            borderRadius: "0px",
             boxShadow:
               "0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1)",
             transition: "box-shadow 0.3s ease-in-out",
-            padding: "20px",
+            padding: "10px",
 
             paddingLeft: "50px",
             paddingRight: "50px",
-            fontSize: "200%",
+            fontSize: "100%",
           }}
         >
-          USER LIST
+          <h3>USER LIST</h3>
         </div>
       </Container>
 
@@ -63,7 +71,7 @@ function App() {
         <div
           className="app"
           style={{
-            width: "70%",
+            width: "100%",
             margin: "-20px auto",
             border: "1px solid grey",
             textAlign: "center",
